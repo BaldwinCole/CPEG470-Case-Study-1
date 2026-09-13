@@ -37,7 +37,7 @@ function searchItems({ q, category, kind }) {
   }
 
   if (category && category !== "all") {
-    sql += ` AND items.category = ?';
+    sql += ` AND items.category = ?`;
     params.push(category);  
   }
 
